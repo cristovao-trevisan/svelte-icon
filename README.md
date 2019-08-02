@@ -1,7 +1,11 @@
 # Svelte-Icon
 
+[![npm version](https://badge.fury.io/js/svelte-icon.svg)](https://badge.fury.io/js/svelte-icon)
+
 Load, resize and recolor svg icons (or images) in svelte.
 Must be used together with [rollup-plugin-string](https://github.com/TrySound/rollup-plugin-string)
+
+If you want to use a svg icon package (like [Zondicons](www.zondicons.com)), this is the library for you.
 
 ## Examples
 
