@@ -11,7 +11,7 @@
     { icon: 'menu', props: { size: '80px' } },
     { icon: 'menu', props: { color: 'red' } },
     { icon: 'menu', class: 'orange' },
-    { icon: 'airplane', props: { fill: 'blue', stroke: 'black' } },
+    { icon: 'airplane', props: { size: '60px', fill: 'blue', stroke: 'black' } },
     { icon: 'home', props: { width: '30px', height: '50px' } },
   ]
   const printProps = props => Object.keys(props || {}).map(key => `${key}="${props[key]}"`).join(' ')
