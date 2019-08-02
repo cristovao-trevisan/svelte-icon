@@ -9,6 +9,8 @@ If you want to use a svg icon package (like [Zondicons](www.zondicons.com)), thi
 
 ## Examples
 
+[DEMO](https://cristovao-trevisan.github.io/svelte-icon/)
+
 ```html
 <script>
   import Icon from 'svelte-icon'
