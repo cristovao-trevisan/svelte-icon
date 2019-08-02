@@ -17,11 +17,11 @@
 
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  width={width}
-  height={height}
-  viewBox={viewBox}
-  stroke={stroke}
-  fill={fill}
+  {width}
+  {height}
+  {viewBox}
+  {stroke}
+  {fill}
 >
   {@html elements}
 </svg>
