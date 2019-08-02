@@ -1,0 +1,32 @@
+{
+  "name": "svelte-icon",
+  "version": "1.0.0",
+  "description": "Svelte SVG Icon Component (use any svg image with color, size, ...)",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristovao-trevisan/svelte-icon.git"
+  },
+  "keywords": [
+    "svelte",
+    "icon",
+    "svg"
+  ],
+  "author": "Cristóvão Trevisan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cristovao-trevisan/svelte-icon/issues"
+  },
+  "homepage": "https://github.com/cristovao-trevisan/svelte-icon#readme",
+  "devDependencies": {
+    "rollup": "^1.18.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-string": "^3.0.0",
+    "rollup-plugin-svelte": "^5.1.0",
+    "rollup-plugin-terser": "^5.1.1",
+    "svelte": "^3.6.10"
+  }
+}
