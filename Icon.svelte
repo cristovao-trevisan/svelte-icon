@@ -1,6 +1,6 @@
 <script>
   export let data = ''
-  export let viewBox = '0 0 20 20'
+  export let viewBox = extractViewBox(data)
   
   export let size = '20px'
   export let width = size
@@ -13,6 +13,13 @@
   $: elements = data
     .replace(/<svg ([^>]*)>/, '')
     .replace('</svg>', '')
+
+  function extractViewBox(svg: string) {
+    const regex = /viewBox="([\d ]+)"/
+    const res = regex.exec(svg)
+    if (!res) return '0 0 20 20' // default value
+    return res[1]
+  }
 </script>
 
 <svg
