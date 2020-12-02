@@ -6,6 +6,8 @@ Load, resize and recolor svg icons (or images) in svelte.
 
 If you want to use a svg icon package (like [Zondicons](www.zondicons.com)), this is the library for you.
 
+> Typescript ready!
+
 ## Examples
 
 [DEMO](https://cristovao-trevisan.github.io/svelte-icon/)
@@ -72,15 +74,17 @@ module.exports = {
 
 ## Options
 
-```js
-export let data = ''
-export let viewBox = '0 0 20 20'
+```ts
+interface SvelteIconProps {
+  data: string
+  viewBox?: string
 
-export let size = '20px'
-export let width = size
-export let height = size
+  size?: string
+  width?: string
+  height?: string
 
-export let color = 'currentColor'
-export let stroke = color
-export let fill = color
+  color?: string
+  stroke?: string
+  fill?: string
+}
 ```
