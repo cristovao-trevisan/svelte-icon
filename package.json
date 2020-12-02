@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "Svelte SVG Icon Component (use any svg image with color, size, ...)",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "build": "rollup -c"
   },
