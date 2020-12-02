@@ -14,7 +14,7 @@
     .replace(/<svg ([^>]*)>/, '')
     .replace('</svg>', '')
 
-  function extractViewBox(svg: string) {
+  function extractViewBox(svg) {
     const regex = /viewBox="([\d ]+)"/
     const res = regex.exec(svg)
     if (!res) return '0 0 20 20' // default value
