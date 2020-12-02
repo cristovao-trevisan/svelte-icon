@@ -3,7 +3,6 @@
 [![npm version](https://badge.fury.io/js/svelte-icon.svg)](https://badge.fury.io/js/svelte-icon)
 
 Load, resize and recolor svg icons (or images) in svelte.
-Must be used together with [rollup-plugin-string](https://github.com/TrySound/rollup-plugin-string)
 
 If you want to use a svg icon package (like [Zondicons](www.zondicons.com)), this is the library for you.
 
@@ -29,6 +28,11 @@ If you want to use a svg icon package (like [Zondicons](www.zondicons.com)), thi
 <div class="item orange"> <Icon data={menu} /> </div>
 ```
 
+## Setup
+
+### Rollup
+If using rollup, must be used together with [rollup-plugin-string](https://github.com/TrySound/rollup-plugin-string).
+
 ```js
 // rollup.config.js
 // ...
@@ -42,6 +46,26 @@ export default {
       include: 'src/img/**/*.svg',
     }),
     // ...
+  },
+}
+```
+
+### Webpack
+For webpack, use with [raw-loader](https://github.com/webpack-contrib/raw-loader),
+
+```js
+// webpack.config.js
+// ...
+module.exports = {
+  // ...
+  module: {
+    rules: [
+      {
+        test: /src\/img\/.*svg$/i,
+        use: 'raw-loader',
+      },
+      // ...
+    ]
   },
 }
 ```
