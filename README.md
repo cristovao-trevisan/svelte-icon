@@ -8,6 +8,11 @@ If you want to use a svg icon package (like [Zondicons](www.zondicons.com)), thi
 
 > Typescript ready!
 
+## Installation
+```sh
+npm install --dev rollup-plugin-string svelte-icon
+```
+
 ## Examples
 
 [DEMO](https://cristovao-trevisan.github.io/svelte-icon/)
@@ -71,6 +76,18 @@ module.exports = {
   },
 }
 ```
+
+### Sapper
+If your rollup.config.js is using the `url` plugin (modern sapper template), you need to disable it for icons used by this package (processed by the string plugin actually), using the following option:
+```js
+      url({
+        exclude: 'src/img/**/*.svg', // <- ignore files being processed by rollup-plugin-string
+	sourceDir: path.resolve(__dirname, 'src/node_modules/images'),
+        \\...
+```
+> You need to add this to both client and server configuration
+
+Checkout this [example config](./config/rollup.config.js) for a complete example.
 
 ## Options
 
