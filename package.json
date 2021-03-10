@@ -1,6 +1,6 @@
 {
   "name": "svelte-icon",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Svelte SVG Icon Component (use any svg image with color, size, ...)",
   "main": "index.js",
   "module": "index.mjs",

@@ -10,7 +10,7 @@ If you want to use a svg icon package (like [Zondicons](www.zondicons.com)), thi
 
 ## Installation
 ```sh
-npm install --dev rollup-plugin-string svelte-icon
+npm install --save-dev rollup-plugin-string svelte-icon
 ```
 
 ## Examples
