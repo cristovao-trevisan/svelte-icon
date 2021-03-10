@@ -1,1 +1,1 @@
-export { default } from './Icon.svelte'
+module.exports =  require('./Icon.svelte');
