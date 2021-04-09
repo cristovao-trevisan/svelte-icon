@@ -33,6 +33,7 @@ npm install --save-dev rollup-plugin-string svelte-icon
 <Icon data={menu} color="red" />
 <Icon data={airplane} fill="blue" stroke="black" />
 <div class="item orange"> <Icon data={menu} /> </div>
+<Icon data={menu} class="inline" />  <!-- you can pass class (or anything else) using $$restProps -->
 ```
 
 ## Setup
@@ -103,5 +104,7 @@ interface SvelteIconProps {
   color?: string
   stroke?: string
   fill?: string
+
+  [key: string]: unknown // $$restProps
 }
 ```

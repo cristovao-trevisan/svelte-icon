@@ -10,6 +10,8 @@ declare module "svelte-icon" {
     color?: string
     stroke?: string
     fill?: string
+
+    [key: string]: unknown
   }
 
   export default class {

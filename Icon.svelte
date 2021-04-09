@@ -29,6 +29,7 @@
   {viewBox}
   {stroke}
   {fill}
+  {...$$restProps}
 >
   {@html elements}
 </svg>
