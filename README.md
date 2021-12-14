@@ -4,7 +4,7 @@
 
 Load, resize and recolor svg icons (or images) in svelte.
 
-If you want to use a svg icon package (like [Zondicons](www.zondicons.com)), this is the library for you.
+If you want to use a svg icon package (like [Zondicons](https://www.zondicons.com/) and [Eva Icons](https://akveo.github.io/eva-icons)), this is the library for you.
 
 > Typescript ready!
 
