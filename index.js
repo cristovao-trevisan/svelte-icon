@@ -1,1 +1,2 @@
-module.exports =  require('./Icon.svelte');
+const Icon = require('./Icon.svelte');
+module.exports = Icon;

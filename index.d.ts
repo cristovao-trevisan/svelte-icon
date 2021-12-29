@@ -14,7 +14,7 @@ declare module "svelte-icon" {
     [key: string]: unknown
   }
 
-  export default class {
+  export default class Icon {
     $$prop_def: SvelteIconProps
   }
 }

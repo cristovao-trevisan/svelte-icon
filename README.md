@@ -38,6 +38,17 @@ npm install --save-dev rollup-plugin-string svelte-icon
 
 ## Setup
 
+### SvelteKit
+Simply import the svg file as a raw string using vite's raw import, eg.:
+
+```html
+<script>
+  import logo from '$lib/img/logo.svg?raw';
+</script>
+
+<Icon data={logo} size="40px" stroke=white />
+```
+
 ### Rollup
 If using rollup, must be used together with [rollup-plugin-string](https://github.com/TrySound/rollup-plugin-string).
 
