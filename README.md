@@ -10,7 +10,7 @@ If you want to use a svg icon package (like [Zondicons](https://www.zondicons.co
 
 ## Installation
 ```sh
-npm install --save-dev rollup-plugin-string svelte-icon
+npm install --save-dev svelte-icon
 ```
 
 ## Examples
@@ -51,6 +51,10 @@ Simply import the svg file as a raw string using vite's raw import, eg.:
 
 ### Rollup
 If using rollup, must be used together with [rollup-plugin-string](https://github.com/TrySound/rollup-plugin-string).
+
+```sh
+npm i -D rollup-plugin-string
+```
 
 ```js
 // rollup.config.js
