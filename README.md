@@ -43,6 +43,7 @@ Simply import the svg file as a raw string using vite's raw import, eg.:
 
 ```html
 <script>
+  import Icon from 'svelte-icon/Icon.svelte';
   import logo from '$lib/img/logo.svg?raw';
 </script>
 
