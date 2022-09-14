@@ -1,6 +1,7 @@
+import css from 'rollup-plugin-css-only'
+import svelte from 'rollup-plugin-svelte'
 import { terser } from 'rollup-plugin-terser'
 import { string } from 'rollup-plugin-string'
-import svelte from 'rollup-plugin-svelte'
 import resolve from 'rollup-plugin-node-resolve'
 
 export default {
@@ -15,12 +16,8 @@ export default {
     string({
       include: 'example/img/**/*.svg',
     }),
-    svelte({
-
-      css: stylesheet => {
-        stylesheet.write('docs/bundle.css', false)
-      },
-    }),
+    svelte(),
+    css({ output: 'bundle.css' }),
     terser(),
   ],
   watch: {
