@@ -11,7 +11,7 @@
   export let fill = color
 
   $: elements = data
-    .replace(/<svg ([^>]*)>/, '')
+    .replace(/<svg[ \n]([^>]*)>/, '')
     .replace('</svg>', '')
 
   function extractViewBox(svg) {
