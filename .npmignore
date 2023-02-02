@@ -1,7 +1,0 @@
-/docs
-/example
-/node_modules
-/config
-.gitignore
-package-lock.json
-rollup.config.js
