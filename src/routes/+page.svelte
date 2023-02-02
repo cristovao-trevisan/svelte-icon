@@ -1,9 +1,9 @@
 <script lang="ts">
   import Icon from '$lib/Icon.svelte';
 
-  import menu from '$lib/img/zondicons/menu.svg?raw'
-  import airplane from '$lib/img/zondicons/airplane.svg?raw'
-  import home from '$lib/img/zondicons/home.svg?raw'
+  import menu from '../img/zondicons/menu.svg?raw'
+  import airplane from '../img/zondicons/airplane.svg?raw'
+  import home from '../img/zondicons/home.svg?raw'
 
   let icons: { [key: string]: string } = { menu, home, airplane }
   let items = [
