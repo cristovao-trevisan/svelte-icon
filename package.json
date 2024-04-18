@@ -1,10 +1,10 @@
 {
 	"name": "svelte-icon",
-	"version": "2.0.0",
+	"version": "2.1.0",
 	"scripts": {
 		"dev": "vite dev",
-    "docs": "vite build",
-		"build": "svelte-kit sync && svelte-package",
+		"docs": "vite build",
+		"build": "svelte-kit sync && svelte-package && publint",
 		"prepublishOnly": "echo 'Did you mean to publish `./package/`, instead of `./`?' && exit 1",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
@@ -13,11 +13,15 @@
 		"@sveltejs/adapter-static": "^1.0.5",
 		"@sveltejs/kit": "^1.0.0",
 		"@sveltejs/package": "^1.0.0",
+		"publint": "^0.2.7",
 		"svelte": "^3.54.0",
 		"svelte-check": "^3.0.1",
 		"tslib": "^2.4.1",
 		"typescript": "^4.9.3",
 		"vite": "^4.0.0"
+	},
+	"peerDependencies": {
+		"svelte": "^3"
 	},
 	"type": "module"
 }

@@ -10,6 +10,8 @@
   export let stroke = color
   export let fill = color
 
+  export let title = ''
+
   $: elements = data
     .replace(/<svg[ \n]([^>]*)>/, '')
     .replace('</svg>', '')
@@ -31,5 +33,6 @@
   {fill}
   {...$$restProps}
 >
+  {#if title} <title>{title}</title> {/if}
   {@html elements}
 </svg>
