@@ -112,6 +112,7 @@ Checkout this [example config](./config/rollup.config.js) for a complete example
 interface SvelteIconProps {
   data: string
   viewBox?: string
+  title?: string // will add a <title>{title}</title> inside your svg for a11y purposes
 
   size?: string
   width?: string

@@ -21,7 +21,7 @@
 		"vite": "^4.0.0"
 	},
 	"peerDependencies": {
-		"svelte": "^3"
+		"svelte": ">=3.0.0"
 	},
 	"type": "module"
 }
